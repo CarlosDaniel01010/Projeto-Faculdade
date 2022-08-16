@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --cor0:#101B7A;
+    --cor1:#1828BA;
+    --cor2:#4D7BF5;
+    --cor3:#418BE0;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-nova:'Roboto Condensed', sans-serif;
+}
+body{
+    font-size: 18pt;
+    /*width: 960px;
+    padding: 0;*/
+    background-color: #E0C4AD;
+    text-align: justify;
+}
+header{
+    text-align: center;
+    min-height: 100px;
+    min-width: 30%;
+    max-width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0)  );
+    border: none;
+}
+header > h1{
+    text-transform: uppercase;
+    font-family: var(--font-nova);
+    padding: 10px;
+    color: white;
+}
+header > p{
+    color: white;
+    font-family: var(--font-nova);
+    padding-bottom: 30px;
+
+}
+nav{
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cor0);
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: 20pt;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+li{
+    display: inline;
+    padding: 20px;
+    font-family: var(--font-nova);  
+}
+main{
+    margin: auto;
+    min-width: 300px;
+    max-width: 1100px;
+    margin-bottom: 10px;
+    
+}
+
+article{
+   background-color: white;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   padding: 2%;
+}
+p{
+    margin-top: 10px;
+    font-family: var(--font-nova);
+}
+h1{
+    font-family: var(--font-nova);
+}      
+img{
+    max-width: 100%;
+}
+.logo_empresa{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-nova);
+    border: 1px solid black;
+    margin-top: 30px;
+}
+thead{
+    text-align: center;
+    background: var(--cor2);
+}
+tbody{
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+}
+tr:hover{
+    background: var(--cor2);
+}
+.gray{
+    background: lightgray;
+}
+.ir-topo a{
+    text-decoration: none;
+}
+footer > p{
+    margin: 10px;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: var(--cor3);
+}
+footer{
+    padding-top: 10px;
+    padding: 20px;
+    background-color: var(--cor0);
+    color: white;
+    font-size: 18pt;
+}
+
+.appleI, .produtos, .appleII, .jobs{
+    margin: 10px 0 0;
+    min-width: 320px;
+}
+figcaption{
+    font-family: var(--font-nova);
+    font-size: 14pt;
+    font-weight: bold;
+}
+h3{
+    font-family: var(--font-nova);
+}
+.esquerda p{
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.direita{
+    display: flex;
+    flex-direction: column-reverse;
+     
+}
+.title{
+    text-align: center;
+    font-family: var(--font-nova);
+    padding: 50px;
+}
+fieldset{
+    font-weight:bold;
+    margin-bottom: 30px;
+    padding: 20px;
+    height: 300px;
+}
+form{
+    font-size: 15pt;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+label{
+    font-family: var(--font-nova);
+    
+}
+input{
+    width: 300px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: var(--cor2);
+}
+.enunciado{
+    text-align: center;
+    font-family: var(--font-nova);
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+}
+.textarea{
+    padding-top: 20px;
+}
+.checkbtn{
+    font-size: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    display: none;
+    justify-content: end;
+}
+#check{
+    display: none;
+}
+.btn1, .btn2, .btn3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+    section, img{
+        width: 100%;
+        padding: 0;
+    }
+   
+@media screen and (max-width: 550px){
+        nav li{
+            display: block;
+            height: 5vh;
+        }
+        .direita .ir-topo{
+            display: none; 
+        }
+        .textarea{
+            padding-top: 20px;
+            width: 90%;
+        }
+        fieldset{
+            height: 50%;
+            width: 90%;
+        }
+        .container2{
+            display: block;
+        }
+        .checkbtn{
+            display: flex;
+        }
+        ul{
+            position: absolute;
+            /* display: block;  */
+            width: 100%;  
+            height: 85vh;
+            left: -100%; 
+            background-color: #101B7A;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 10px; 
+            line-height: 50px;
+        }
+        #check:checked ~ ul{
+            left: 0;
+            padding: 0;
+            transition: all .5s;
+            position: absolute;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+}
+/*@media  screen and (max-width: 320px) {
+    main{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 10pt;
+    }   
+}*/
